@@ -628,7 +628,7 @@ width: 270px;
         letter-spacing: 0.03em;
         color: #757575;
         transition-property: background-color, transform;
-        transition-duration: 250ms;
+        transition-duration: 250ms, ;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -667,14 +667,13 @@ width: 270px;
     position: relative;
     overflow: hidden;
     display: flex; 
-    transition: transform 250ms ease;
-
+    
     
 }
 
-.box:hover::before{
+/*.box:hover::before{
 opacity: 1;
-}
+}*/
 
 /*.box::before{
     position: absolute;
@@ -706,7 +705,9 @@ opacity: 1;
     background-color: rgba(33, 150, 243, 0.9);
     display: inline-block;
     transform: translateY(100%);
-    transition: transform 250ms ease;
+    transition-property: background-color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 63px;
     padding-left: 24px;
     padding-bottom: 63px;
@@ -744,4 +745,54 @@ opacity: 1;
     border-right:1px solid #EEEEEE; ;
     border-bottom:1px solid #EEEEEE; ;
     border-left:1px solid #EEEEEE; ;
+}
+
+/*---------------------MODAL.JS----------------------------*/
+
+.backdrop{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    transition: opacity 300ms linear, visibility 300ms linear;
+}
+
+.modal{
+    width: 528px;
+    height: 581px;
+    position: absolute;
+    background-color: #FFFFFF;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: opacity 300ms linear
+}
+
+.modal-close{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #9da4bd;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus{
+    fill: #2196F3;
+}
+
+.backdrop.is-hidden{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
