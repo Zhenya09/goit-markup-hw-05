@@ -39,7 +39,7 @@ img {
 
 .current::after{
     position: absolute;
-    bottom: 0;
+    bottom: -32px;
     content: '';
     display: block;
     width: 100%;
@@ -86,7 +86,6 @@ img {
         line-height: 1.19;
         letter-spacing: 0.03em;
         color: #000000;
-        transition-property: background-color, transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -113,8 +112,6 @@ img {
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: #212121;
-        padding-bottom: 28px;
-        transition-property: background-color, transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -128,7 +125,6 @@ img {
         color: #757575;
         display: flex;
         align-items: center;
-        transition-property: background-color, transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -151,7 +147,6 @@ img {
         color: #757575;
         display: flex;
     align-items: center;
-    transition-property: background-color, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -412,7 +407,7 @@ width: 270px;
     align-items: center;
     justify-content: center;
     fill: #AFB1B8;
-    transition-property: background-color, transform;
+    transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -457,7 +452,7 @@ width: 270px;
     align-items: center;
     justify-content: center;
     fill: #AFB1B8;
-    transition-property: background-color, transform;
+    transition-property: border, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -495,7 +490,6 @@ width: 270px;
         line-height: 1.19;
         letter-spacing: 0.03em;
         color: #FFFFFF;
-        transition-property: background-color, transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -515,7 +509,6 @@ width: 270px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: #FFFFFF;
-        transition-property: background-color, transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
@@ -527,7 +520,6 @@ width: 270px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
-        transition-property: background-color, transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -536,7 +528,6 @@ width: 270px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
-        transition-property: background-color, transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -566,7 +557,7 @@ width: 270px;
     justify-content: center;
     fill: #FFFFFF;
     background: rgba(255, 255, 255, 0.1);
-    transition-property: background-color, transform;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -601,7 +592,7 @@ width: 270px;
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
-        transition-property: background-color, transform;
+        transition-property: background-color, box-shadow, color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -619,7 +610,6 @@ width: 270px;
         letter-spacing: 0.06em;
         color: #212121;
         margin-bottom: 4px;
-        transition-property: background-color, transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -627,8 +617,7 @@ width: 270px;
         line-height: 1.88;
         letter-spacing: 0.03em;
         color: #757575;
-        transition-property: background-color, transform;
-        transition-duration: 250ms, ;
+        transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -636,7 +625,7 @@ width: 270px;
     cursor: pointer;
     background: #F5F4FA;
         border-radius: 4px;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+       /*/ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);*/
     border: none;
     padding-left: 22px;
     padding-right: 22px;
@@ -658,7 +647,7 @@ width: 270px;
 
 .container-card{
     display: block;
-    transition-property: background-color, transform;
+    transition-property: background-color, transform, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -705,15 +694,14 @@ opacity: 1;
     background-color: rgba(33, 150, 243, 0.9);
     display: inline-block;
     transform: translateY(100%);
-    transition-property: background-color, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: auto;
     padding-top: 63px;
     padding-left: 24px;
     padding-bottom: 63px;
     padding-right: 24px;
 }
-
 
 .container-card:hover,
 .container-card:focus {
@@ -721,7 +709,6 @@ opacity: 1;
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 
 .main-list{
         background: #FFFFFF;
@@ -755,7 +742,7 @@ opacity: 1;
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
-    transition: opacity 300ms linear, visibility 300ms linear;
+    transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 .modal{
@@ -768,7 +755,7 @@ opacity: 1;
     transform: translate(-50%, -50%);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transition: opacity 300ms linear
+    transition: opacity 250ms linear
 }
 
 .modal-close{
