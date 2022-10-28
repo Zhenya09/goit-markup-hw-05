@@ -86,6 +86,7 @@ img {
         line-height: 1.19;
         letter-spacing: 0.03em;
         color: #000000;
+        transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -112,6 +113,7 @@ img {
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: #212121;
+        transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -125,6 +127,7 @@ img {
         color: #757575;
         display: flex;
         align-items: center;
+        transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -147,6 +150,7 @@ img {
         color: #757575;
         display: flex;
     align-items: center;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -601,6 +605,15 @@ width: 270px;
 .container-main:focus{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         border-radius: 4px;
+        background-color: #2196F3;
+            color: #FFFFFF;
+}
+
+.main-btn:hover,
+.main-btn:focus{
+    background-color: #2196F3;
+    color: #FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main-title{
@@ -624,8 +637,8 @@ width: 270px;
 .main-btn{
     cursor: pointer;
     background: #F5F4FA;
-        border-radius: 4px;
-       /*/ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);*/
+    border-radius: 4px;
+    /*box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);*/
     border: none;
     padding-left: 22px;
     padding-right: 22px;
@@ -680,7 +693,19 @@ opacity: 1;
 .container-card:hover .box-text {
     opacity: 1;
     transform: translateY(0);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
     
+}
+.container-card:focus .box,
+.container-card:focus .box-text {
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 .box-text{
